@@ -8,6 +8,7 @@
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.test.context.SpringBootTest;
 //
+//import java.util.HashMap;
 //import java.util.List;
 //
 //@SpringBootTest
@@ -36,7 +37,7 @@
 //    }
 //
 //    void findAll() {
-//        List< BoardResponseDto > list = boardService.findAll();
+//        HashMap<String, Object> list = boardService.findAll(2, 1);
 //
 //        if(list != null) {
 //            System.out.println("# Success findAll() : " + list.toString());
@@ -55,6 +56,7 @@
 //        }
 //    }
 //
+//    @Test
 //    private void updateBoard(Long id) {
 //        BoardRequestDto boardRequestDto = new BoardRequestDto();
 //

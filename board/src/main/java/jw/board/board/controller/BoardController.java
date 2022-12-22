@@ -64,6 +64,7 @@ public class BoardController {
     @PostMapping("/board/view/action")
     public String boardViewAction(Model model, BoardRequestDto boardRequestDto) throws Exception{
         try{
+            System.out.println(boardRequestDto.getTitle());
             int result = boardService.updateBoard(boardRequestDto);
 
             if(result<1){

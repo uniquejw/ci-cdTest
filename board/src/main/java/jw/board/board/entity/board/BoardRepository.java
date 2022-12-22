@@ -8,8 +8,8 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 public interface BoardRepository extends JpaRepository < Board, Long > {
-    String UPDATE_BOARD = "UPDATE Board " +
-            "SET TITLE = :#{#boardRequestDto.title}, " +
+    String UPDATE_BOARD = "UPDATE Board SET " +
+            "TITLE = :#{#boardRequestDto.title}, " +
             "CONTENT = :#{#boardRequestDto.content}, " +
             "UPDATE_TIME = NOW() " +
             "WHERE ID = :#{#boardRequestDto.id}";
